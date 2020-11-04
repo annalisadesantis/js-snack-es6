@@ -40,23 +40,17 @@ $(document).ready(function() {
     // console.log(nuovi_mezzi);
 
 
+    const nuovi_mezzi = mezzi.map((item) => {
 
+        const copia_item = {
+            ...item,
+            posizione: getRandomChar()
+        };
 
+        return copia_item;
+    });
 
-
-
-
-    // const nuovi_mezzi = mezzi.map((item) => {
-    //
-    //     const copia_item = {
-    //         ...item,
-    //         posizione: getRandomChar()
-    //     };
-    //
-    //     return copia_item;
-    // });
-    //
-    // console.log(nuovi_mezzi);
+    console.log(nuovi_mezzi);
 });
 
 
